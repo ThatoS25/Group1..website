@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skillsync Tech Support</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary-green: #2ecc40;
+            --primary-blue: #2980b9;
+            --white: #fff;
+            --nav-bg: #f8f8f8;
+        }
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            background: var(--white);
+            color: #222;
+        }
+        header {
+            background: linear-gradient(90deg, var(--primary-green) 0%, var(--primary-blue) 100%);
+            color: var(--white);
+            padding: 32px 0 24px 0;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+        }
+        nav {
+            background: var(--nav-bg);
+            box-shadow: 0 2px 4px rgba(41,128,185,0.08);
+        }
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav li {
+            margin: 0 18px;
+        }
+        nav a {
+            text-decoration: none;
+            color: var(--primary-blue);
+            font-weight: 500;
+            font-size: 1.1rem;
+            padding: 12px 0;
+            display: block;
+            transition: color 0.2s;
+        }
+        nav a:hover, nav a.active {
+            color: var(--primary-green);
+            border-bottom: 2px solid var(--primary-green);
+        }
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .card {
+            background: var(--white);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(41,128,185,0.08);
+            padding: 32px;
+            margin-bottom: 32px;
+        }
+        @media (max-width: 600px) {
+            header h1 { font-size: 1.5rem; }
+            nav ul { flex-direction: column; }
+            nav li { margin: 8px 0; }
+            .container { padding: 0 8px; }
+            .card { padding: 16px; }
+
+            .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 24px;
+            margin-top: 18px;
+        }
+        .service-box {
+            background: var(--nav-bg);
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(41,128,185,0.08);
+            padding: 24px 16px;
+            text-align: center;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .service-box:hover {
+            transform: translateY(-6px) scale(1.03);
+            box-shadow: 0 6px 18px rgba(41,128,185,0.13);
+        }
+        .service-icon {
+            font-size: 2.2rem;
+            margin-bottom: 12px;
+        }
+        .service-title {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-blue);
+            margin-bottom: 8px;
+        }
+        .service-desc {
+            color: var(--primary-green);
+            font-size: 1rem;
+
+           .header-flex {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 18px;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    .logo-img {
+        height: 56px;
+        width: 56px;
+        object-fit: contain;
+        border-radius: 8px;
+        margin-right: 12px;
+        background: #fff;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    } 
+    
+        
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Skillsync Tech Support</h1>
+        <p>Your trusted partner for all tech support needs</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="call log form.html">Call Log Form</a></li>
+            <li><a href="questions.html">Troubleshooting Questions</a></li>
+            <li><a href="escalation.html">Escalation Procedure</a></li>
+            <li><a href="asset register.html">Asset Register</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <header>
+    <div class="header-flex">
+        <img src="skill logo.jpg" alt="Skillsync Tech Support Logo" class="logo-img">
+        <div>
+            <h1>Skillsync Tech Support</h1>
+            <p>Your trusted partner for all tech support needs</p>
+        </div>
+    </div>
+</header>
+    </nav>
+    <div class="container">
+        <div class="card">
+            <h2>Welcome to Skillsync Tech Support</h2>
+            <p>
+                We provide reliable and efficient tech support services to help you resolve your IT challenges quickly and professionally. Our team is dedicated to ensuring your technology works seamlessly so you can focus on what matters most.
+            </p>
+        </div>
+         <div class="card">
+            <h3>Our Services</h3>
+            <div class="services-grid">
+                <div class="service-box">
+                    <div class="service-icon">🕑</div>
+                    <div class="service-title">24/7 Technical Assistance</div>
+                    <div class="service-desc">Round-the-clock support for all your urgent IT needs.</div>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">📞</div>
+                    <div class="service-title">Call Logging & Issue Tracking</div>
+                    <div class="service-desc">Efficiently log and monitor your support requests for fast resolution.</div>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🛠️</div>
+                    <div class="service-title">Step-by-step Troubleshooting</div>
+                    <div class="service-desc">Clear guidance to resolve technical issues with ease.</div>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🚀</div>
+                    <div class="service-title">Escalation Management</div>
+                    <div class="service-desc">Swift escalation for complex problems to ensure minimal downtime.</div>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">📋</div>
+                    <div class="service-title">Asset Registration & Monitoring</div>
+                    <div class="service-desc">Track and manage your IT assets for optimal performance.</div>
+                </div>
+                <div class="service-box">
+                    <div class="service-icon">🤝</div>
+                    <div class="service-title">Customer Support & Contact Channels</div>
+                    <div class="service-desc">Multiple ways to reach us for friendly and professional assistance.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<!-- ...existing code... -->
+       
+<!-- ...existing code... -->
+    <style>
+        /* ...existing styles... */
+        
+    </style>
+<!-- ...existing code... -->
